@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
@@ -44,8 +45,15 @@ export default function Navbar() {
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 sm:h-20">
             <div className="flex items-center gap-8">
-              <Link href="/" className="text-2xl font-bold text-slate-900">
-                Q Chatbot
+              <Link href="/" className="flex items-center gap-2">
+                <Image 
+                  src="/images/clients/q-logo.svg" 
+                  alt="Q Logo" 
+                  width={35} 
+                  height={35} 
+                  className="w-auto h-8"
+                />
+                <span className="text-xl font-bold text-slate-900">Chatbot</span>
               </Link>
               <div className="hidden md:flex gap-2">
                 {navigation.map((item) => (
