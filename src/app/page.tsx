@@ -49,6 +49,11 @@ const mainFeatures = [
     icon: ServerIcon,
   },
   {
+    name: 'Global Language Support',
+    description: 'Full support for any language, including right-to-left scripts like Arabic, ensuring worldwide accessibility',
+    icon: GlobeAltIcon,
+  },
+  {
     name: 'Data Ownership',
     description: 'Complete ownership of your chatbot and data with perpetual license',
     icon: LockClosedIcon,
@@ -60,13 +65,13 @@ const chatbotTypes = [
     name: 'Custom Web Portal',
     description: 'Full-featured web application with dedicated chat interface, admin dashboard, and analytics',
     icon: ComputerDesktopIcon,
-    features: ['Custom branded interface', 'Advanced analytics', 'User management', 'Multi-channel support']
+    features: ['Custom branded interface', 'Advanced analytics', 'User management', 'Multilingual interface']
   },
   {
     name: 'Website Widget',
     description: 'Embeddable chat widget that seamlessly integrates with your existing website',
     icon: ChatBubbleBottomCenterTextIcon,
-    features: ['Easy integration', 'Customizable design', 'Mobile responsive', 'Multi-page support']
+    features: ['Easy integration', 'RTL language support', 'Mobile responsive', 'Multi-page support']
   },
   {
     name: 'Messaging Platforms',
@@ -157,12 +162,12 @@ const detailedFeatures = {
   customization: [
     {
       name: 'Brand Alignment',
-      description: 'Perfectly matched to your brand voice and communication style',
+      description: 'Perfectly matched to your brand voice and communication style in any language',
       icon: WrenchScrewdriverIcon,
     },
     {
       name: 'Knowledge Integration',
-      description: 'Built with your specific documentation and business logic',
+      description: 'Built with your specific documentation and business logic, supporting multiple languages and scripts',
       icon: CubeTransparentIcon,
     },
     {
@@ -832,7 +837,7 @@ export default function Home() {
               Transform Your Business with <span className="gradient-text">AI Chat</span>
             </h2>
             <p className="section-description max-w-3xl mx-auto">
-              Whether you're looking to automate customer support, streamline operations, or create new revenue channels - we'll guide you through the entire process. Our experts will help you discover the perfect chatbot solution for your business.
+              Whether you're looking to automate customer support, streamline operations, or create new revenue channels - we'll guide you through the entire process. Our multilingual chatbot solution supports all languages, including Arabic and other RTL scripts, making it perfect for global businesses.
             </p>
           </div>
 
