@@ -235,8 +235,8 @@ export default function Home() {
                   Schedule Consultation
                   <ArrowRightIcon className="h-4 w-4" />
                 </Link>
-                <Link href="#features" className="btn-secondary">
-                  View Features
+                <Link href="#benefits" className="btn-secondary">
+                  View Benefits
                 </Link>
               </div>
             </motion.div>
@@ -308,7 +308,7 @@ export default function Home() {
       </div>
 
       {/* Main Features Section */}
-      <div id="features" className="relative py-20 bg-white">
+      <div id="benefits" className="relative py-20 bg-white">
         <div className="absolute inset-0 modern-grid opacity-[0.15]" />
         <div className="container-custom relative">
           <motion.div
@@ -355,7 +355,7 @@ export default function Home() {
       </div>
 
       {/* Chatbot Types Section */}
-      <div className="relative py-20 bg-surface">
+      <div id="implementation" className="relative py-20 bg-surface">
         <div className="container-custom">
           <motion.div
             variants={containerVariants}

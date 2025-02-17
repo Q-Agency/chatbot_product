@@ -3,7 +3,8 @@ import { FaTwitter, FaLinkedin, FaFacebook, FaInstagram, FaDribbble, FaYoutube, 
 
 const navigation = {
   product: [
-    { name: 'Features', href: '#features' },
+    { name: 'Benefits', href: '#benefits' },
+    { name: 'Implementation', href: '#implementation' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'Contact', href: '#contact' },
   ],
