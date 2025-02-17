@@ -972,11 +972,11 @@ export default function Home() {
 
             <div className="mt-12 pt-12 border-t border-gray-200">
               <div className="grid md:grid-cols-2 gap-8">
-                <div className="text-center md:text-left">
+                <div className="text-center">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">London Office</h3>
                   <p className="text-gray-600">Borough Yards, 13 Dirty Lane<br />London, SE19PA</p>
                 </div>
-                <div className="text-center md:text-left">
+                <div className="text-center">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Zagreb HQ</h3>
                   <p className="text-gray-600">Reljkoviceva 4<br />10000 Zagreb, Croatia</p>
                 </div>
