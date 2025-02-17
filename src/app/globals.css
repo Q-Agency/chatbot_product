@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 15, 23, 42;
+  --background-rgb: 248, 250, 252;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-gradient-start to-gradient-end;
+}
+
+.glass-effect {
+  @apply bg-white/90 backdrop-blur-lg border-b border-white/20 shadow-sm;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 0.75rem;
+  background: linear-gradient(to right, #0699EC, #0477B9);
+  padding: 1px;
+}
+
+.gradient-border > * {
+  background: white;
+  border-radius: 0.75rem;
+}
+
+.modern-dots-bg {
+  background-image: 
+    radial-gradient(circle at 100px 100px, #0699EC 4px, transparent 0),
+    radial-gradient(circle at 400px 400px, #0477B9 6px, transparent 0);
+  background-size: 600px 600px;
+  opacity: 0.07;
+  animation: drift 30s linear infinite;
+}
+
+.hero-bg {
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(6, 153, 236, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(4, 119, 185, 0.1) 0%, transparent 50%);
+}
+
+.modern-grid {
+  background-image: linear-gradient(rgba(6, 153, 236, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 153, 236, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+}
+
+@keyframes drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 600px 600px;
+  }
+}
+
+.nav-link {
+  @apply relative py-2 px-3 -mx-3 rounded-lg transition-colors;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-3 right-3 h-0.5 bg-primary scale-x-0 transition-transform duration-300 origin-left;
+}
+
+.nav-link:hover {
+  @apply bg-primary/5;
+}
+
+.nav-link:hover::after {
+  @apply scale-x-100;
+}
+
+.nav-link.active {
+  @apply text-primary bg-primary/5;
+}
+
+.nav-link.active::after {
+  @apply scale-x-100;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 20s linear infinite;
+}
+
+@layer components {
+  .btn-primary {
+    @apply relative overflow-hidden bg-primary text-white px-6 py-3 rounded-xl font-medium transition-all duration-300 hover:bg-secondary hover:scale-105 hover:shadow-lg shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply relative px-6 py-3 rounded-xl font-medium border-2 border-primary/20 text-primary transition-all duration-300 hover:border-primary hover:scale-105 hover:shadow-lg;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .feature-card {
+    @apply bg-white rounded-2xl p-8 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl border border-black/5 shadow-sm;
+  }
+
+  .hero-gradient {
+    @apply absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent;
+  }
+
+  .section-title {
+    @apply text-4xl sm:text-5xl font-bold text-slate-900;
+  }
+
+  .section-description {
+    @apply text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto;
+  }
+} 
