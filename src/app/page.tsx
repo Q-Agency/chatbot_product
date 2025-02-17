@@ -211,7 +211,7 @@ export default function Home() {
             </motion.div>
             <motion.div
               variants={itemVariants}
-              className="relative h-[600px] animate-float"
+              className="relative h-[800px] animate-float"
             >
               <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-primary/2 to-transparent rounded-full blur-3xl -z-10" />
               <Image
@@ -324,7 +324,7 @@ export default function Home() {
       </div>
 
       {/* Chatbot Types Section */}
-      <div className="relative py-32 bg-surface">
+      <div className="relative py-20 bg-surface">
         <div className="container-custom">
           <motion.div
             variants={containerVariants}
@@ -379,7 +379,7 @@ export default function Home() {
       </div>
 
       {/* Quick Delivery Section */}
-      <div className="relative py-32 bg-white">
+      <div className="relative py-20 bg-white">
         <div className="absolute inset-0 modern-dots-bg" />
         <div className="absolute inset-0 hero-bg opacity-50" />
         <div className="container-custom relative">
@@ -453,16 +453,16 @@ export default function Home() {
               Our proven process and extensive experience allow us to deliver high-quality custom chatbots quickly. 
               While simple implementations can be completed in 2 weeks, the exact timeline may vary based on your specific requirements and data complexity.
             </motion.p>
-            <motion.button variants={itemVariants} className="btn-primary inline-flex items-center justify-center gap-2">
+            <Link href="#contact" className="btn-primary inline-flex items-center justify-center gap-2">
               Schedule Consultation
               <ArrowRightIcon className="h-4 w-4" />
-            </motion.button>
+            </Link>
           </motion.div>
         </div>
       </div>
 
       {/* Detailed Features Section */}
-      <div className="relative py-32 bg-surface">
+      <div className="relative py-16 bg-surface">
         <div className="container-custom">
           {/* Conversation Features */}
           <motion.div
@@ -470,7 +470,7 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mb-32"
+            className="mb-20"
           >
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
@@ -514,10 +514,10 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mb-32"
+            className="mb-20"
           >
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <motion.div variants={itemVariants} className="relative h-[400px] lg:h-[600px] lg:order-1">
+              <motion.div variants={itemVariants} className="relative h-[400px] lg:h-[600px]">
                 <Image
                   src="/images/technical-demo.png"
                   alt="Technical Interface"
@@ -598,7 +598,7 @@ export default function Home() {
       </div>
 
       {/* Pricing Section */}
-      <div id="pricing" className="relative py-32 bg-white">
+      <div id="pricing" className="relative py-20 bg-white">
         <div className="container-custom">
           <div className="text-center space-y-6 mb-20">
             <h2 className="section-title">
@@ -709,7 +709,7 @@ export default function Home() {
       </div>
 
       {/* Client Showcase Section */}
-      <div className="relative py-20 bg-white overflow-hidden">
+      <div className="relative py-16 bg-white overflow-hidden">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="section-title">
@@ -788,7 +788,7 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="relative py-32 bg-surface">
+      <div id="contact" className="relative py-20 bg-surface">
         <div className="absolute inset-0 modern-grid opacity-[0.15]" />
         <div className="container-custom relative">
           <div className="text-center space-y-6 mb-16">
