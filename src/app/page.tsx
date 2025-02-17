@@ -277,7 +277,7 @@ export default function Home() {
       </div>
 
       {/* Main Features Section */}
-      <div id="features" className="relative py-32 bg-white">
+      <div id="features" className="relative py-20 bg-white">
         <div className="absolute inset-0 modern-grid opacity-[0.15]" />
         <div className="container-custom relative">
           <motion.div
