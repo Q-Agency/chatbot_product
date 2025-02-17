@@ -25,6 +25,7 @@ import {
   RocketLaunchIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { FaWhatsapp, FaSlack, FaMicrosoft, FaViber, FaTelegram, FaFacebookMessenger } from 'react-icons/fa'
 
 const mainFeatures = [
   {
@@ -71,7 +72,32 @@ const chatbotTypes = [
     name: 'Messaging Platforms',
     description: 'Native chatbot integration with popular messaging platforms',
     icon: ChatBubbleLeftRightIcon,
-    features: ['WhatsApp', 'Slack', 'Viber', 'Telegram', 'Facebook Messenger']
+    features: [
+      {
+        name: 'WhatsApp',
+        icon: FaWhatsapp
+      },
+      {
+        name: 'Microsoft Teams',
+        icon: FaMicrosoft
+      },
+      {
+        name: 'Slack',
+        icon: FaSlack
+      },
+      {
+        name: 'Viber',
+        icon: FaViber
+      },
+      {
+        name: 'Telegram',
+        icon: FaTelegram
+      },
+      {
+        name: 'Facebook Messenger',
+        icon: FaFacebookMessenger
+      }
+    ]
   },
   {
     name: 'Mobile Apps',
@@ -366,9 +392,18 @@ export default function Home() {
                 </p>
                 <ul className="space-y-2">
                   {type.features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-sm text-slate-600">
-                      <CheckIcon className="h-4 w-4 text-primary flex-shrink-0" />
-                      <span>{feature}</span>
+                    <li key={typeof feature === 'string' ? feature : feature.name} className="flex items-center gap-2 text-sm text-slate-600">
+                      {typeof feature === 'string' ? (
+                        <>
+                          <CheckIcon className="h-4 w-4 text-primary flex-shrink-0" />
+                          <span>{feature}</span>
+                        </>
+                      ) : (
+                        <>
+                          <feature.icon className="h-4 w-4 text-primary flex-shrink-0" />
+                          <span>{feature.name}</span>
+                        </>
+                      )}
                     </li>
                   ))}
                 </ul>
