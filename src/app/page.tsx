@@ -957,7 +957,7 @@ export default function Home() {
                   </span>
                 </button>
 
-                <div className="text-center space-y-2">
+                <div className="space-y-2">
                   <p className="text-sm font-medium text-gray-900">
                     Here's what happens next:
                   </p>
