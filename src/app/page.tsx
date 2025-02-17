@@ -277,7 +277,7 @@ export default function Home() {
       </div>
 
       {/* Main Features Section */}
-      <div id="features" className="relative py-40 bg-white">
+      <div id="features" className="relative py-32 bg-white">
         <div className="absolute inset-0 modern-grid opacity-[0.15]" />
         <div className="container-custom relative">
           <motion.div
@@ -598,7 +598,7 @@ export default function Home() {
       </div>
 
       {/* Pricing Section */}
-      <div id="pricing" className="relative py-40 bg-white">
+      <div id="pricing" className="relative py-32 bg-white">
         <div className="container-custom">
           <div className="text-center space-y-6 mb-20">
             <h2 className="section-title">
@@ -788,7 +788,7 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <div id="contact" className="relative py-40 bg-surface">
+      <div id="contact" className="relative py-32 bg-surface">
         <div className="absolute inset-0 modern-grid opacity-[0.15]" />
         <div className="container-custom relative">
           <div className="text-center space-y-6 mb-16">

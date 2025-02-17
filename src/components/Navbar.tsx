@@ -55,7 +55,7 @@ export default function Navbar() {
                 />
                 <span className="text-xl font-bold text-slate-900">Chatbot</span>
               </Link>
-              <div className="hidden md:flex gap-2">
+              <div className="hidden md:flex gap-6">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
