@@ -223,15 +223,15 @@ export default function Home() {
                 <span className="gradient-text">Through Agentic Chatbots</span>
               </h1>
               <p className="text-xl text-slate-600 max-w-xl">
-                Not sure how AI can help your business? We guide you through the entire journey. Our experts analyze your needs, design the perfect solution, and build it with you.
+                Get started with our proven AI chatbot solution. Built on years of experience, our established product can be quickly customized to your needs. Our experts will guide you through the entire journey.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Link href="#contact" className="btn-primary inline-flex items-center justify-center gap-2">
                   Schedule Consultation
                   <ArrowRightIcon className="h-4 w-4" />
                 </Link>
-                <Link href="https://q.agency/case-studies/" className="btn-secondary">
-                  View Case Studies
+                <Link href="#features" className="btn-secondary">
+                  View Features
                 </Link>
               </div>
             </motion.div>
@@ -317,7 +317,7 @@ export default function Home() {
               Why Choose <span className="gradient-text">Q Chatbot</span>?
             </motion.h2>
             <motion.p variants={itemVariants} className="section-description">
-              Enterprise-ready features designed for your success
+              Battle-tested features powering successful businesses worldwide
             </motion.p>
           </motion.div>
           <motion.div
@@ -363,7 +363,7 @@ export default function Home() {
               Flexible <span className="gradient-text">Implementation Options</span>
             </motion.h2>
             <motion.p variants={itemVariants} className="section-description">
-              Deploy your chatbot wherever your users are
+              Our established platform supports all major channels, ready to be customized for your needs
             </motion.p>
           </motion.div>
 
@@ -429,7 +429,7 @@ export default function Home() {
               Rapid <span className="gradient-text">Delivery</span>
             </motion.h2>
             <motion.p variants={itemVariants} className="section-description">
-              Get your custom chatbot up and running in as little as 2 weeks
+              With our battle-tested product as the foundation, your custom chatbot can be up and running in as little as 2 weeks
             </motion.p>
           </motion.div>
 
@@ -463,7 +463,7 @@ export default function Home() {
                 <CpuChipIcon className="h-12 w-12 text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Week 2</h3>
-              <p className="text-slate-600 mb-4">Development and AI model training</p>
+              <p className="text-slate-600 mb-4">Development and AI model setup</p>
               <p className="text-primary font-medium">Days 6-10</p>
             </motion.div>
 
@@ -485,8 +485,9 @@ export default function Home() {
             className="text-center mt-16"
           >
             <motion.p variants={itemVariants} className="text-lg text-slate-600 mb-8 max-w-3xl mx-auto">
-              Our proven process and extensive experience allow us to deliver high-quality custom chatbots quickly. 
-              While simple implementations can be completed in 2 weeks, the exact timeline may vary based on your specific requirements and data complexity.
+              Our established product and proven process allow us to deliver high-quality custom chatbots quickly. 
+              Built on years of experience and real-world implementations, our core technology is ready to be tailored to your needs.
+              While most customizations can be completed in 2 weeks, the exact timeline may vary based on your specific requirements and data complexity.
             </motion.p>
             <Link href="#contact" className="btn-primary inline-flex items-center justify-center gap-2">
               Schedule Consultation
@@ -516,7 +517,7 @@ export default function Home() {
                   From Concept to <span className="gradient-text">Deployment</span>
                 </motion.h2>
                 <motion.p variants={itemVariants} className="text-lg text-slate-600">
-                  We handle every aspect of building your custom AI solution, from initial consultation to final deployment.
+                  With our mature product as the foundation, we quickly customize and deploy your AI solution, from initial consultation to final implementation.
                 </motion.p>
                 <motion.div variants={itemVariants} className="space-y-6">
                   {detailedFeatures.conversation.map((feature) => (
@@ -568,7 +569,7 @@ export default function Home() {
                   Seamless <span className="gradient-text">Integration</span>
                 </motion.h2>
                 <motion.p variants={itemVariants} className="text-lg text-slate-600">
-                  Custom-built to work perfectly with your existing systems and infrastructure.
+                  Our proven integration framework ensures seamless connection with your existing systems and infrastructure.
                 </motion.p>
                 <motion.div variants={itemVariants} className="space-y-6">
                   {detailedFeatures.technical.map((feature) => (
@@ -603,7 +604,7 @@ export default function Home() {
                   Your Solution, <span className="gradient-text">Your Way</span>
                 </motion.h2>
                 <motion.p variants={itemVariants} className="text-lg text-slate-600">
-                  Own your AI solution with a perpetual license and customize it to your exact needs.
+                  Get a perpetual license to our established platform, customized to your exact needs and ready for rapid deployment.
                 </motion.p>
                 <motion.div variants={itemVariants} className="space-y-6">
                   {detailedFeatures.customization.map((feature) => (
@@ -732,8 +733,8 @@ export default function Home() {
 
           <div className="text-center mt-16">
             <p className="text-lg text-slate-600 mb-8">
-              Each solution is custom-built for your specific needs.<br />
-              Contact us for a personalized quote.
+              Each solution is tailored to your needs, building upon our mature and proven platform.<br />
+              Contact us for a personalized quote on customizing our established product for your business.
             </p>
             <Link href="#contact" className="btn-primary inline-flex items-center justify-center gap-2">
               Schedule Consultation
@@ -1006,6 +1007,22 @@ export default function Home() {
             </form>
 
             <div className="mt-12 pt-12 border-t border-gray-200">
+              <div className="text-center mb-12">
+                <a 
+                  href="https://q.agency" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-block hover:opacity-80 transition-opacity"
+                >
+                  <Image 
+                    src="/images/clients/q-logo.svg" 
+                    alt="Q Agency" 
+                    width={50} 
+                    height={50} 
+                    className="mx-auto"
+                  />
+                </a>
+              </div>
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="text-center">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">London Office</h3>
